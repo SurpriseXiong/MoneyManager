@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context="com.gress.moneymanager.ZiJinAddctivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="50dp"
+            android:text="添加资金账户"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/addtype_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/back1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/account_Et_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:hint="请输入账户名称"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/account_Et_money"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:hint="请输入账户余额"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+           
+            android:onClick="selectcolor"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/button1" />
+
+        <ImageView
+            android:id="@+id/account_selectcolor"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/button1"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@+id/view1"
+            android:background="@drawable/ft_cash1"
+            android:paddingRight="30dp" />
+
+        <TextView
+            android:id="@+id/account_Tv_pattern"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="现金" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shapebutton3"
+        android:onClick="submit"
+        android:text="确定" />
+
+</LinearLayout>

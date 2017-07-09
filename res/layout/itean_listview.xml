@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iteam_ig_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bt_yiwai" />
+
+    <TextView
+        android:id="@+id/iteam_lv_name"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+       
+        android:text="资金类型" />
+
+    <TextView
+      android:id="@+id/iteam_lv_money"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+      
+        android:layout_weight="1"
+        android:text="money" />
+
+</LinearLayout>

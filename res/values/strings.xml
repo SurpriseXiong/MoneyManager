@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MoneyManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_mycenter">MycenterActivity</string>
+    <string name="title_activity_add_typle">AddTypleActivity</string>
+    <string name="title_activity_zi_ji_nzhuan">ZiJiNzhuanActivity</string>
+    <string name="title_activity_ji_zhangpen">JiZhangpenActivity</string>
+    <string name="title_activity_warn">WarnActivity</string>
+
+</resources>

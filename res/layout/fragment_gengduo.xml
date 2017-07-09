@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="更多" />
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_setup" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_mine_header" >
+
+        <TextView
+            android:id="@+id/fg_gengduo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:text="请登录"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/gengduo_touxiang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/fg_gengduo_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/mine_pic_nor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="手势密码" />
+
+        <com.book.utils.FunSwitch
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gengduo_tixing"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp"
+        android:text="记账提醒" />
+
+    <TextView
+        android:id="@+id/gengduo_TJHY"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp"
+        android:text="推荐给好友" />
+
+    <TextView
+        android:id="@+id/gengduo_yijianfankui"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp"
+        android:text="意见反馈" />
+
+    <TextView
+        android:id="@+id/gengduo_hpds"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp"
+        android:text="好评打赏" />
+
+    <TextView
+        android:id="@+id/gengduo_gywm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp"
+        android:text="关于我们" />
+
+</LinearLayout>

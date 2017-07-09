@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context="com.gress.moneymanager.ZiJiNzhuanActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="70dp"
+            android:text="转账"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/zijin_zhuang_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/back1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/out_listview"
+        android:background="@drawable/shapebutton4"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+             android:id="@+id/out_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3.48"
+            android:src="@drawable/ft_wangluochongzhi1" />
+
+        <TextView
+            android:id="@+id/out_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="40"
+            android:text="支付宝" />
+	        <ImageView
+	             android:layout_weight="3.48"
+	            android:paddingRight="20dp"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_horizontal"
+	        android:src="@drawable/ic_zhuanru" />
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+         android:id="@+id/in_listview"
+         android:background="@drawable/shapebutton4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/in_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3.48"
+            android:src="@drawable/ft_wangluochongzhi1" />
+
+        <TextView
+            android:id="@+id/in_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="40"
+            android:text="支付宝" />
+         <ImageView
+	             android:layout_weight="3.48"
+	            android:paddingRight="20dp"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_horizontal"
+	        android:src="@drawable/ic_zhuanchu" />
+    </LinearLayout>
+    
+    <EditText 
+        android:id="@+id/money_zhuang"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入要转入的金额"
+        android:background="@drawable/shapebutton4"
+        android:inputType="numberDecimal"
+/>
+
+    <Button 
+        android:onClick="submit"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapebutton3"
+android:text="确定转账"/>
+</LinearLayout>

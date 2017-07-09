@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/iteam_recond_zhichuday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="day" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/iteam_recond_zhichuday"
+        android:text="号" />
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/iteam_recond_zhichuphoto"
+        android:background="#3A5FCD" />
+
+    <ImageView
+        android:id="@+id/iteam_recond_zhichuphoto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        
+        android:background="@drawable/oval_bg1"
+        android:src="@drawable/bt_food" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/iteam_recond_zhichucontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       android:layout_toLeftOf="@+id/iteam_recond_zhichumoney"
+        android:text="消费 -" />
+
+    <TextView
+        android:id="@+id/iteam_recond_zhichumoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="money" />
+
+  
+</RelativeLayout>

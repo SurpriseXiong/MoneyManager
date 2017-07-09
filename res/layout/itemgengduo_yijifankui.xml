@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="10dp"
+           android:textSize="17dp"
+            android:text="意见反馈" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@null"
+        android:ems="10"
+        android:hint="请提出您宝贵的意见" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/iteam_yijian_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:background="@null"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/iteam_yijian_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/iteam_yijian_submit"
+        android:layout_alignBottom="@+id/iteam_yijian_submit"
+        android:layout_alignLeft="@+id/editText1"
+        android:background="@null"
+        android:text="取消" />
+
+</RelativeLayout>
